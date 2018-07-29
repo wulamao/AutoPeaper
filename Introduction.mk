@@ -1,18 +1,27 @@
-#尝试使用markdown来写论文
+#自动格式化论文工具企划案
 ---
 ###**准备**
 编辑器:*vscode*
 插件:*markdown-preview-enhanced*
 核心工具:*pandoc* 
 ___
-####***插入图片(名称中不能存在空格)***
-![](/battery.png)
-######**链接**
+###整合思路
+markdown、ppt、word、mindmap、pdf、html之间的转换
+markdown语法简洁，配合latex数学公式，专注论文内容书写
+word和Ppdf适合论文投稿
+ppt适合展示总结
+midmap适合管理素材、整理逻辑
+___
+[点击跳转到Latex数学公式输入](#jump)
+___
+####Markdown语法学习
+######***插入图片(名称中不能存在空格)***
+![](/images/battery.png)
+######***插入链接***
 ***[文字链接](http://www.baidu.com)***
 <http://www.baidu.com>  //自动链接  
 [脚注方式][^1] 
 [^1]: http://www.baidu.com
-
 ######**引用+列表**
 > 1. 有序列表1
 >     + 嵌套列表
@@ -20,7 +29,6 @@ ___
 >     1.1 嵌套列表
 > 		* 嵌套列表
 > 2. 有序列表2
-
 > * 无序列表
 > * 无序列表
 > - 无序列表
@@ -62,23 +70,24 @@ Pipe     | $1
 ######**缩进和标签**
 > &emsp;&emsp;段落开头,`行内标签`
 ######**Setext方式标题+居中**
-<center> P Plan </center>
+<center> AutoPeaper </center>
 ===== 
-<div align = center>P Plan</div> 
+<div align = center>AutoPeaper</div> 
 ----- 
 $$
-	P Plan
+	AutoPeaper
 $$
 ######**转义**
 \ 转义符
-
-###latax插入数学公式
+___
+<span id="jump">跳转到的地方</span>
+###Latax插入数学公式
 - [参考博客](http://www.cnblogs.com/Sinte-Beuve/p/6160905.html)
 
 - 行间公式inline `$...$`
 - 块间公式displayed `$$...$$`
 - 希腊字母表
-![](/greek_alphabet_table.png)
+![](/images/greek_alphabet_table.png)
 - 上下标、根号、省略号 
 上标： ^ 如 $x^2$ 为 `x^2`
 下标： _ 如 $x_i$ 为 `x_i`
@@ -112,6 +121,6 @@ X=\left|
     \end{matrix}
 \right|
 $$
-分隔符
-箭头
-![](/arrows.png)
+- 分隔符
+- 箭头
+![](/images/arrows.png)
